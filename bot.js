@@ -11,4 +11,4 @@ client.on('message', message => {
        }
 });
  
-client.login(process.env.vHg_hPmYwBKu5O1AnpK3aoM5dndFTe-k);//BOT_TOKEN is the Client Secret
+client.login(process.env.vHg_hPmYwBKu5O1AnpK3aoM5dndFTe-k);
