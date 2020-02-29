@@ -1,0 +1,139 @@
+# WishServices - Bot Commands
+-------
+Prefix: /
+-------
+
+-------
+/info
+-------
+**Wish Services**
+*Wish Services is hoping to become a very large support discord server, for those who aren't very good with coding. Not only will there be a heap of friendly people, who will help you out with coding without any hesitation, a great community to chat with, but we will also be hosting events for some awesome rewards, so stay tuned for them.*
+-------
+/variables
+-------
+**Skript - Variables**
+Variables are Skript's way to save data. Every variable has a name and a value, i.e. some stored data. You can put variables anywhere in your triggers to replace something, e.g. you can replace a location with a variable that holds a location.
+This can for example be used for a /home command: make a variable ‘home’ and a command /home which teleports the player to the location stored in the ‘home’ variable.
+To distinguish variables from the rest of the trigger their name has to be put in curly brackets like this: {variable name}. A variable's name can also contain expressions, e.g. to make a ‘home’ variable for every player you can make a variable like {home.%player%} where %player% will be replaced by the player's name every time the variable is used, which essentially creates a ‘home’ variable that is different for every player.
+
+Variables are Skript's way to save data. Every variable has a name and a value, i.e. some stored data. You can put variables anywhere in your triggers to replace something, e.g. you can replace a location with a variable that holds a location.
+This can for example be used for a /home command: make a variable ‘home’ and a command /home which teleports the player to the location stored in the ‘home’ variable.
+To distinguish variables from the rest of the trigger their name has to be put in curly brackets like this: {variable name}. A variable's name can also contain expressions, e.g. to make a ‘home’ variable for every player you can make a variable like {home.%player%} where %player% will be replaced by the player's name every time the variable is used, which essentially creates a ‘home’ variable that is different for every player.
+
+Variables are Skript's way to save data. Every variable has a name and a value, i.e. some stored data. You can put variables anywhere in your triggers to replace something, e.g. you can replace a location with a variable that holds a location.
+This can for example be used for a /home command: make a variable ‘home’ and a command /home which teleports the player to the location stored in the ‘home’ variable.
+To distinguish variables from the rest of the trigger their name has to be put in curly brackets like this: {variable name}. A variable's name can also contain expressions, e.g. to make a ‘home’ variable for every player you can make a variable like {home.%player%} where %player% will be replaced by the player's name every time the variable is used, which essentially creates a ‘home’ variable that is different for every player.
+
+Example:
+```cs
+on join:
+  set {_player} to player
+  wait a minute
+  message "%{_player}%" # the local variable is unchanged no matter how many players joined in the meantime
+```
+```cs
+options:
+  option name = option value
+```
+-------
+/events
+-------
+The following is a listing of all possible events you can use to start a trigger with. Each trigger can only have one single event, i.e. you cannot create triggers that are called when any of several events occurrs.
+
+Please also note that the ‘on’ at the start of an event is entirely optional but it just looks better in my opinion, and that most events don't have examples since there is only one way to use them.
+
+```cs
+At Time
+On Bed Enter
+On Bed Leave
+On Block Damage
+On Break / Mine
+On Bucket Empty
+On Bucket Fill
+On Burn
+On Can Build Check
+On Chat
+On Chunk Generate
+On Chunk Load
+On Chunk Unload
+On Click
+On Combust
+On Command
+On Connect
+On Consume
+On Craft
+On Creeper Power
+On Damage
+On Death
+On Dispense
+On Drop
+On Enderman/Sheep
+On Experience Spawn
+On Explode
+On Explosion Prime
+On Fade
+On First Join
+On Fishing
+On Flow
+On Form
+On Fuel Burn
+On Gamemode Change
+On Grow
+On Heal
+On Hunger Meter Change
+On Ignition
+On Item Break
+On Item Spawn
+On Join
+On Kick
+On Leaves Decay
+On Level Change
+On Lightning Strike
+On Move On
+On Physics
+On Pick Up
+On Pig Zap
+On Piston Extend
+On Piston Retract
+On Place
+On Portal
+On Portal Create
+On Portal Enter
+On Pressure Plate / Trip
+On Projectile Hit
+On Quit
+On Redstone
+On Region Enter/Leave
+On Respawn
+On Script Load/Unload
+On Shoot
+On Sign Change
+On Skript Start/Stop
+On Smelt
+On Sneak Toggle
+On Spawn
+On Spawn Change
+On Spread
+On Sprint Toggle
+On Tame
+On Target
+On Teleport
+On Throwing of an Egg
+On Tool Change
+On Vehicle Create
+On Vehicle Damage
+On Vehicle Destroy
+On Vehicle Enter
+On Vehicle Exit
+On Weather Change
+On World Init
+On World Load
+On World Save
+On World Unload
+On Zombie Break Door
+```
+
+
+
+
+*** THIS WILL BE CHANGED IN THE FUTURE! ***
