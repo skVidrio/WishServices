@@ -1,6 +1,6 @@
 const Disc = require('discord.js');
 const client = new Disc.Client();
-const token = 'NjkzNzI2MzI2ODkyMzk2NTk1.XoBRXw.D9O8WRc-oyksNApzq3lzJKPlQ8w'
+const token = 'NjkzNzI2MzI2ODkyMzk2NTk1.XoBXwQ.Es00vmfQYcOs2XGYctJUjw1H2ZE'
 
 
 client.login(token);
